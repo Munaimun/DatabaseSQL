@@ -1,33 +1,36 @@
-# College Database Project
+# DatabaseSQL
 
-This repository contains SQL scripts to create and manage a simple database for a college system. The database includes the following:
+This repository contains SQL scripts for practicing and learning **database operations** using MySQL.  
+It includes examples of creating databases and tables, inserting and updating data, deleting records, altering tables, and performing joins.
 
-## Contents
+## Project Overview
 
-### 1. Database Creation
-- A database named `college` is created and made active.
+The main SQL script (`college_db.sql`) demonstrates the following:
 
-### 2. Tables
-- **`student` Table:** Stores information about students, including roll numbers, names, marks, grades, and cities.
-- **`dept` Table:** Contains department details, such as department IDs and names.
-- **`teacher` Table:** Holds teacher data, including IDs, names, and associated department IDs. It establishes a relationship with the `dept` table using a foreign key.
+- **Database and Table Creation**  
+- **Inserting Data**  
+- **Updating and Deleting Records**  
+- **Altering Tables** (add, drop, rename columns)  
+- **Aggregate Functions** (COUNT, GROUP BY)  
+- **Joins**:
+  - LEFT JOIN
+  - RIGHT JOIN
+  - FULL OUTER JOIN (using UNION)
+- **Filtering** (WHERE clause)  
+- **Ordering Results** (ORDER BY)
 
-### 3. Sample Data
-- Sample records are inserted into the `student`, `dept`, and `teacher` tables for demonstration purposes.
+This script uses a **college scenario** with three tables:
 
-### 4. Queries
-- Various SQL queries are included to:
-  - Retrieve data from tables.
-  - Filter, sort, and limit results.
-  - Perform grouping and aggregation.
+1. **student** – stores student information (roll, name, marks, city, age, etc.)  
+2. **dept** – stores department details (id, name)  
+3. **teacher** – stores teacher details and links to departments  
 
-### 5. Data Updates
-- SQL statements to update data in the `student`, `dept`, and `teacher` tables are provided.
-
-### 6. Relationships
-- Demonstrates the use of foreign keys and cascading updates/deletions between tables (`teacher` and `dept`).
+---
 
 ## Usage
-1. Use the SQL script to create the database and tables.
-2. Insert the provided sample data.
-3. Execute the queries to interact with the data and understand the relationships.
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Munaimun/DatabaseSQL.git
+cd DatabaseSQL
